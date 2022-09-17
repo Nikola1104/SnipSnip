@@ -1,0 +1,25 @@
+﻿<Window x:Class="SnipSnip.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnipSnip"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Horizontal">
+        <ListView Height="437" d:ItemsSource="{d:SampleData ItemCount=5}" Width="217">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <RichTextBox Width="582" Height="433" VerticalAlignment="Bottom">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </StackPanel>
+</Window>
